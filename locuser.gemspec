@@ -6,12 +6,12 @@ require 'locuser/version'
 Gem::Specification.new do |spec|
   spec.name          = "locuser"
   spec.version       = Locuser::VERSION
-  spec.authors       = ["hgillesp"]
-  spec.email         = ["hsgvmd@gmail.com"]
+  spec.authors       = ["sgillesp"]
+  spec.email         = ["masterofratios@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
+  spec.summary       = %q{Provides localization within a taxonomy, along with true geospatial localization as well.}
   spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "http://github.com/sgillesp/locuser"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
@@ -27,7 +27,19 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "rails", '~> 4.0', '>= 4.0'
+  spec.add_dependency "mongodb"
+  spec.add_dependency "moped"
+  spec.add_dependency "mongoid"
+  spec.add_dependency "bson_ext"
+  spec.add_dependency "taxonomite", "~> 0.1.0"
+  spec.add_dependency "geocoder"
+
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec"
+  spec.add_development_dependency "faker"
+  spec.add_development_dependency "factory_girl_rails"
+  spec.add_development_dependency "better_errors"
+  spec.add_development_dependency "binding_of_caller"
 end
