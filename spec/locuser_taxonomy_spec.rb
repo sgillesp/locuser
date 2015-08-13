@@ -9,7 +9,7 @@ describe Locuser do
   end
 
   it 'allows county within state' do
-    county = FactoryGirl.build(:random_country_generator)
+    county = FactoryGirl.build(:random_county_generator)
     state = FactoryGirl.build(:random_state_generator)
     expect { state.children << county }.not_to raise_error
   end
@@ -29,13 +29,13 @@ describe Locuser do
   it 'disallows country within state' do
     country = FactoryGirl.build(:random_country_generator)
     state = FactoryGirl.build(:random_state_generator)
-    expect { state.children << country }.not_to raise_error
+    expect { state.children << country }.to raise_error
   end
 
   it 'disallows state within city' do
     city = FactoryGirl.build(:random_city_generator)
     state = FactoryGirl.build(:random_state_generator)
-    expect { city.children << state }.not_to raise_error
+    expect { city.children << state }.to raise_error
   end
 
 end

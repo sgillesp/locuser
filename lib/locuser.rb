@@ -1,5 +1,4 @@
-require "locuser/version"
+require "locuser/engine"
 
 module Locuser
-  # Your code goes here...
 end

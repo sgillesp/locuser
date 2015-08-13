@@ -6,6 +6,7 @@ module Locuser
     class Configuration
         attr_accessor   :use_geocoder
         attr_accessor   :google_api_key
+        attr_accessor   :address_formatter
 
         # Class declarations
         #
@@ -36,6 +37,7 @@ module Locuser
         def initialize
           @use_geocoder = :true
           @google_api_key = 'AIzaSyDR-WjFAX-6lYkLBparpdxrXiFsHet-DQY'
+          @address_formatter = Locuser::AddressFormatter.new
         end
     end
 end

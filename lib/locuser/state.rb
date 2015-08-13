@@ -1,5 +1,5 @@
 
-require 'locuser/streetaddress'
+require 'locuser/locality'
 
 module Locuser
   class State < ::Locuser::Locality

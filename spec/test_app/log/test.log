@@ -1,0 +1,319 @@
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6300ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbd8d084032e1a2b000006')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1759ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbd8d084032e1a2b000006')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2227ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbd8d084032e1a2b000007')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1382ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbd8d084032e1a2b000007')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1999ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5505ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbda4b84032e1a7f000006')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1526ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbda4b84032e1a7f000006')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1926ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbda4b84032e1a7f000007')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1440ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbda4b84032e1a7f000007')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1832ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbda4b84032e1a7f000008')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1525ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbda4b84032e1a7f000008')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2055ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5838ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbdabb84032e1a9a000006')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1747ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbdabb84032e1a9a000006')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2158ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbdabb84032e1a9a000007')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1420ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbdabb84032e1a9a000007')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1915ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbdabb84032e1a9a000008')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1683ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbdabb84032e1a9a000008')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2102ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbdabb84032e1a9a000009')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2126ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbdabb84032e1a9a000009')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2400ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6158ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbdd5884032e1c14000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1938ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbdd5884032e1c14000000')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2181ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbdd5884032e1c14000001')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1677ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbdd5884032e1c14000001')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2022ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbdd5884032e1c14000002')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1427ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbdd5884032e1c14000002')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1900ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbdd5884032e1c14000003')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1350ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbdd5884032e1c14000003')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2145ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6707ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbdd8384032e1c28000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1750ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbdd8384032e1c28000000')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2120ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbdd8384032e1c28000001')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1725ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbdd8384032e1c28000001')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1796ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbdd8384032e1c28000002')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1492ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbdd8384032e1c28000002')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2373ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbdd8384032e1c28000003')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1582ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbdd8384032e1c28000003')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2011ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6735ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbde8e84032e1c8e000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1991ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbde8e84032e1c8e000000')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2470ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbde8e84032e1c8e000001')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1568ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbde8e84032e1c8e000001')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1987ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbde8e84032e1c8e000002')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1490ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbde8e84032e1c8e000002')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2185ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbde8e84032e1c8e000003')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1375ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbde8e84032e1c8e000003')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2122ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6851ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbded984032e1ca4000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1951ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbded984032e1ca4000000')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2435ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbded984032e1ca4000001')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1667ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbded984032e1ca4000001')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1971ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbded984032e1ca4000002')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1529ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbded984032e1ca4000002')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1922ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbded984032e1ca4000003')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1509ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbded984032e1ca4000003')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1874ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.9087ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbdf2b84032e1cec000008')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2431ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbdf2b84032e1cec000008')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2786ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbdf2b84032e1cec000009')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2008ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbdf2b84032e1cec000009')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2785ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbdf2b84032e1cec00000a')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1933ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbdf2b84032e1cec00000a')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1985ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbdf2b84032e1cec00000b')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1424ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbdf2b84032e1cec00000b')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1894ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5395ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbdf3e84032e1cfc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1598ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbdf3e84032e1cfc000000')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1920ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbdf3e84032e1cfc000001')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1390ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbdf3e84032e1cfc000001')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1998ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbdf3e84032e1cfc000002')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1354ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbdf3e84032e1cfc000002')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1688ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbdf3e84032e1cfc000003')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1321ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbdf3e84032e1cfc000003')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1710ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6214ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe3ed84032e1ebc000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2106ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe3ed84032e1ebc000000')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2294ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe3ed84032e1ebc000001')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1703ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe3ed84032e1ebc000001')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2029ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe3ed84032e1ebc000002')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1495ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe3ed84032e1ebc000002')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1886ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe3ed84032e1ebc000003')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1389ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe3ed84032e1ebc000003')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1817ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5622ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe44684032e1ed1000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1548ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe44684032e1ed1000000')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1878ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe44684032e1ed1000001')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1536ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe44684032e1ed1000001')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1768ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe44684032e1ed1000002')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1418ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe44684032e1ed1000002')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1735ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe44684032e1ed1000003')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1375ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe44684032e1ed1000003')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1781ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6565ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe47784032e1ee4000008')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1950ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe47784032e1ee4000008')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2690ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe47784032e1ee4000009')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1742ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe47784032e1ee4000009')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2001ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe47784032e1ee400000a')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1409ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe47784032e1ee400000a')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2099ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe47784032e1ee400000b')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1388ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe47784032e1ee400000b')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1935ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5963ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe53384032e1ef8000008')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1700ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe53384032e1ef8000008')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2469ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe53384032e1ef8000009')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1602ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe53384032e1ef8000009')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1792ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe53384032e1ef800000a')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1353ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe53384032e1ef800000a')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1870ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe53384032e1ef800000b')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1330ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe53384032e1ef800000b')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1738ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5811ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe57f84032e1f10000008')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1799ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe57f84032e1f10000008')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2520ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe57f84032e1f10000009')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1541ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe57f84032e1f10000009')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1931ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe57f84032e1f1000000a')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1376ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe57f84032e1f1000000a')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1814ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe57f84032e1f1000000b')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1342ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe57f84032e1f1000000b')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1792ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6387ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe71c84032e1f85000008')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2024ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe71c84032e1f85000008')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2424ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe71c84032e1f85000009')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1306ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe71c84032e1f85000009')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1839ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe71c84032e1f8500000a')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2628ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe71c84032e1f8500000a')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.5466ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe71c84032e1f8500000b')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2911ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe71c84032e1f8500000b')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1933ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5527ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe73c84032e1f95000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1830ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe73c84032e1f95000000')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1891ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe73c84032e1f95000001')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1415ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe73c84032e1f95000001')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1735ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe73c84032e1f95000002')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1384ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe73c84032e1f95000002')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1807ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe73c84032e1f95000003')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1335ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe73c84032e1f95000003')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1973ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6270ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe8ce84032e2083000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.2178ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe8ce84032e2083000000')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2017ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe8ce84032e2083000001')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1823ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe8ce84032e2083000001')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1792ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe8ce84032e2083000002')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1349ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe8ce84032e2083000002')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1648ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbe8ce84032e2083000003')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1346ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbe8ce84032e2083000003')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1786ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5723ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf59284032e23d7000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1549ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf59284032e23d7000000')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1880ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf59284032e23d7000001')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1362ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf59284032e23d7000001')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1754ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf59284032e23d7000002')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1398ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf59284032e23d7000002')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1779ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf59284032e23d7000003')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1353ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf59284032e23d7000003')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1699ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5836ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf5b284032e23e9000008')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1664ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf5b284032e23e9000008')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2032ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf5b284032e23e9000009')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1553ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf5b284032e23e9000009')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.4240ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf5b284032e23e900000a')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1971ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf5b284032e23e900000a')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2170ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf5b284032e23e900000b')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1424ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf5b284032e23e900000b')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2045ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5980ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf5e184032e23fa000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1622ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf5e184032e23fa000000')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2132ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf5e184032e23fa000001')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1435ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf5e184032e23fa000001')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1739ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf5e184032e23fa000002')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1412ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf5e184032e23fa000002')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1727ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf5e184032e23fa000003')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1363ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf5e184032e23fa000003')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1719ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5789ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf60384032e240b000008')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4543ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf60384032e240b000008')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2015ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf60384032e240b000009')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1371ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf60384032e240b000009')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1606ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf60384032e240b00000a')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6599ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf60384032e240b00000a')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.3950ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf60384032e240b00000b')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1821ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf60384032e240b00000b')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1846ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6790ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf62c84032e241c000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1754ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf62c84032e241c000000')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2000ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf62c84032e241c000001')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1433ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf62c84032e241c000001')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2134ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf62c84032e241c000002')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1375ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf62c84032e241c000002')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1702ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf62c84032e241c000003')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1369ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf62c84032e241c000003')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1718ms
+Creating scope :near. Overwriting existing method Locuser::Location.near.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6121ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf6a284032e2430000008')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1698ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf6a284032e2430000008')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1895ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf6a284032e2430000009')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1469ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf6a284032e2430000009')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2014ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf6a284032e243000000a')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6991ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf6a284032e243000000a')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.2185ms
+  MOPED: 127.0.0.1:27017 QUERY        database=locuser_test collection=taxonomite_nodes selector={"parent_id"=>BSON::ObjectId('55cbf6a284032e243000000b')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.1776ms
+  MOPED: 127.0.0.1:27017 DELETE       database=locuser_test collection=taxonomite_nodes selector={"_id"=>BSON::ObjectId('55cbf6a284032e243000000b')} flags=[:remove_first]
+                         COMMAND      database=locuser_test command={:getlasterror=>1, :w=>1} runtime: 0.1884ms

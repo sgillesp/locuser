@@ -1,5 +1,7 @@
 # locuser/streetaddress.rb
 
+require 'active_support/concern'
+
 module Locuser
   ##
   # Class to handle street addresses - this is not necessarily stored as a
@@ -8,11 +10,13 @@ module Locuser
   # Code for actually handling the street address manipulation, etc. is separate,
   # therefore, from the localized (geolocated) address and taxonomic representation.
   module StreetAddress
+    extend ActiveSupport::Concern
+
     ##
     # get the formatted street address.
     # @return [String] address as one line
-    def address
-      self.address_hash.join
+    def full_address()
+      Locuser::Configuration.config.address_formatter.format(self.address_hash)
     end
 
     ##
@@ -20,8 +24,12 @@ module Locuser
     # :city, :state, :zip, :country are supported.
     # @param [Hash] h the component to find
     # @return [String] address component, or nil if not present
-    def address(h)
-      self.address_hash[h]
+    def address(h1=nil)
+      if h1 == nil
+        self.full_address
+      else
+        self.address_hash[h1]
+      end
     end
 
     ##
@@ -30,7 +38,7 @@ module Locuser
     # @param [Hash] h the component to set
     # @param [String] val the value to set to
     # @return [String] address component, or nil if not present
-    def address(h, val)
+    def set_address(h, val)
       self.address_hash[h] = val
     end
 
@@ -56,7 +64,7 @@ module Locuser
     def state=(val); self.address_hash[:state] = val; end
     def zip=(val); self.address_hash[:zip] = val; end
     def county=(val); self.address_hash[:county] = val; end
-    def country==(val); self.address_hash[:country] = val; end
+    def country=(val); self.address_hash[:country] = val; end
 
 
     protected

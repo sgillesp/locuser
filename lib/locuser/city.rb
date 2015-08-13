@@ -1,3 +1,6 @@
+# city.rb
+
+require 'locuser/locality'
 
 module Locuser
   class City < Locuser::Locality
@@ -17,7 +20,7 @@ module Locuser
     def get_entity_type
         'city'
     end
-    
+
     ##
     # Valid parent types to support taxonomy hierarchy.
     # @return [String] valid parent
