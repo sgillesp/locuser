@@ -20,6 +20,31 @@ Or install it yourself as:
 
     $ gem install locuser
 
+An alternative to installing the gem directly is to use the git
+repository referenced  in your Gemfile, with a  declaration such as:
+
+```ruby
+gem 'locuser',  '~> version', :github => 'sgillesp/locuser', :branch => 'master'
+```
+
+To use a local repository do:
+
+```ruby
+gem 'locuser', :path => '/path/to/local/gem'
+```
+or
+```ruby
+gem 'locuser', :git => '/path/to/local/git/repo'
+```
+
+If you are trying to work on the gem integrated into another gem underdevelopment,
+(i.e. a .gemspec file), the above will not fly. You can use the option to link to
+a remote (GitHub) repository above, and then perform the following command (CLI):
+
+```CLI
+bundle config local.locuser /path/to/local/git/repo
+```
+
 ## Usage
 
 TODO: Write usage instructions here
@@ -38,4 +63,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-

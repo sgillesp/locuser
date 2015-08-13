@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["masterofratios@gmail.com"]
 
   spec.summary       = %q{Provides localization within a taxonomy, along with true geospatial localization as well.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.description   = %q{This gem enforces a taxonomy (using Taxonomite) based upon places (i.e. states, countries, counties, cities, etc.). It also provides geolocation at the leaves of the hierarchy (Locations) which can be specified via geolocation coordinates and/or a street address. }
   spec.homepage      = "http://github.com/sgillesp/locuser"
   spec.license       = "MIT"
 
