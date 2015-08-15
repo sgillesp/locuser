@@ -2,13 +2,16 @@ ENV['RAILS_ENV'] ||= 'test'
 ENGINE_RAILS_ROOT = File.join(File.dirname(__FILE__), '../')
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 
-require File.expand_path("../../spec/test_app/config/environment", __FILE__)
+#require File.expand_path("../../spec/test_app/config/environment", __FILE__)
+require "#{ENGINE_RAILS_ROOT}/spec/test_app/config/environment"
 require 'rspec/rails'
 require 'factory_girl'
 require 'locuser_helper'
 
-
 Rails.backtrace_cleaner.remove_silencers!
+
+# this loads the model for specs
+Dir[File.join(ENGINE_RAILS_ROOT, 'spec/models/**/*.rb')].each {|f| require f}
 
 # this will cause factories to load twice!!
 Dir[File.join(ENGINE_RAILS_ROOT, "spec/factories/**/*.rb")].each {|f| require f}

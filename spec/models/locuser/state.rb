@@ -3,6 +3,7 @@ require 'locuser/locality'
 
 module Locuser
   class State < ::Locuser::Locality
+    include Locuser::SpecBase
 
     field   :capitol, type: String, default: "Olympia"
 

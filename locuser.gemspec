@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "moped"
   spec.add_dependency "mongoid"
   spec.add_dependency "bson_ext"
-  spec.add_dependency "taxonomite", "~> 0.1.0"
+  spec.add_dependency "taxonomite", ">= 0.1.0"
   spec.add_dependency "geocoder"
 
   spec.add_development_dependency "bundler", "~> 1.10"

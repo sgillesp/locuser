@@ -6,7 +6,7 @@ module Locuser
 
   ##
   # Describes a specific location - this is represented as a latitude/longitude.
-  # Subclasses may contain addresses as well. 
+  # Subclasses may contain addresses as well.
   class Location < Locuser::Locality
 
     # use geocoding?

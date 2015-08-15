@@ -74,11 +74,30 @@ module Locuser
     end
 
     ##
-    # perform any initialization needed.
+    # try to determine the address from the owner and create our hash. for
+    # now this is a temporary fix, but should be passed to another class or
+    # module in the near future. This is bad as it duplicates the address info,
+    # wasting storage (minor) but also requiring mainteance to keep synchronized
+    # (major).
     def do_initialize
+      if (self.owner != nil)
+        if (self.owner.respond_to?(:address_hash))
+          # try to get the owner to give us an address hash
+          self.address_hash = self.owner.address_hash
+        else
+          # try to get as much from the owner as possible.
+          self.street1 = o.street1 unless !o.respond_to?(:street1)
+          self.street2 = o.street2 unless !o.respond_to?(:street2)
+          self.city = o.city unless !o.respond_to?(:city)
+          self.state = o.state unless !o.respond_to?(:state)
+          self.zip = o.zip unless !o.respond_to?(:zip)
+          self.county = o.county unless !o.respond_to?(:county)
+          self.country = o.country unless !o.respond_to?(:country)
+        end
+      end
       # deprecated for now does nothing
       #self.name = (self.owner != nil) && (self.owner.respond_to?('name')) ? self.owner.name : "User: #{self.id}"
     end
 
-  end   # class State
+  end   # class StreetAddress
 end # module Places

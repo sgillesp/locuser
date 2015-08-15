@@ -4,6 +4,7 @@ module Locuser
   # Represents a country as a Locality. Has no particular location. Can accept
   # States, and Locations as children.
   class Country < Locuser::Locality
+    include Locuser::SpecBase
 
     ##
     # Determines whether a location lies within the country.

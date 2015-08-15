@@ -2,6 +2,8 @@
 #   hold configuration parameters for the library
 #
 
+require "locuser/address_formatter"
+
 module Locuser
     class Configuration
         attr_accessor   :use_geocoder

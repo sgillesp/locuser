@@ -1,9 +1,8 @@
 # city.rb
 
-require 'locuser/locality'
-
 module Locuser
   class City < Locuser::Locality
+    include Locuser::SpecBase
 
     ##
     # Determines whether a location lies within the city.

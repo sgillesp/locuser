@@ -5,8 +5,6 @@ module Locuser
   class Locality < Taxonomite::Node
 
     field :includetypeinname, type: Boolean, default: false
-    #field :name, type: String         # name of the locality
-    #field :description, type: String  # description
 
     def self.primary_key
       "_id"

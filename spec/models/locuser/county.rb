@@ -1,6 +1,7 @@
 
 module Locuser
   class County < Locuser::Locality
+    include Locuser::SpecBase
 
     protected
     def includetypeinname?
