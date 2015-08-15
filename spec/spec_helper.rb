@@ -11,7 +11,7 @@ require 'locuser_helper'
 Rails.backtrace_cleaner.remove_silencers!
 
 # this loads the model for specs
-Dir[File.join(ENGINE_RAILS_ROOT, 'spec/models/**/*.rb')].each {|f| require f}
+Dir[File.join(ENGINE_RAILS_ROOT, 'spec/models/locuser/*.rb')].each {|f| require f}
 
 # this will cause factories to load twice!!
 Dir[File.join(ENGINE_RAILS_ROOT, "spec/factories/**/*.rb")].each {|f| require f}

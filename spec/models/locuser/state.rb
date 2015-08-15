@@ -25,12 +25,5 @@ module Locuser
         return 'state'
     end
 
-    ##
-    # Valid parent types to support taxonomy hierarchy.
-    # @return [String] valid parent
-    def valid_parent_types
-      'country'
-    end
-
   end   # class State
 end # module Places

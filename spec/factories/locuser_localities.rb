@@ -2,9 +2,13 @@
 require 'faker'
 
 FactoryGirl.define do
+  factory :taxonomy_generator, :class => 'Taxonomite::Taxonomy' do
+    up_taxonomy { { 'country' => 'planet', 'state' => 'country', 'county' => ["state", "country"],
+            'city' => ["county", "state", "country"] } }
+  end
+
   factory :locuser_locality, :class => 'Locuser::Locality' do
     name "Seattle"
-    description "The emerald city."
   end
 
   factory :random_city_generator, :class => 'Locuser::City' do

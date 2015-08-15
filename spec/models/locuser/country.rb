@@ -23,13 +23,5 @@ module Locuser
         'country'
     end
 
-    ##
-    # Valid parent types (planet is a bit of a joke); engine doesn't currently
-    # support anything greater than country.
-    # @return [String] valid parent (planet)
-    def valid_parent_types
-      'planet'
-    end
-
   end   # class Country
 end # module Places
