@@ -38,7 +38,7 @@ module Locuser
     # @return [String] address component, or nil if not present
     def address(h1=nil)
       if h1 == nil
-        Locuser::Configuration.config.address_formatter.format(self.address_hash)
+        Locuser.config.address_formatter.format(self.address_hash)
       else
         self.address_hash[h1]
       end
@@ -68,7 +68,7 @@ module Locuser
     # @param [String] s the address to set to
     # @return [String] address component, or nil if not present
     def address=(s)
-      p = Locuser::Configuration.config.parser
+      p = Locuser.config.parser
       unless p.nil?
         a = ::StreetAddress::US.parse(s)
         self.street1 = "#{a.number} #{a.prefix} #{a.street} #{a.street_type}"

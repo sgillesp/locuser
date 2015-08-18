@@ -10,7 +10,7 @@ module Locuser
   class Location < Locuser::Locality
 
     # use geocoding?
-    if Locuser::Configuration.config.use_geocoder
+    if Locuser.config.use_geocoder
         require 'geocoder'
 
         Geocoder.configure( lookup: :google, timeout: 3, units: :mi)

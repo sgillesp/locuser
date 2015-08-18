@@ -16,7 +16,7 @@ module Locuser
     # # @return [String] address as one line
     # def full_address()
     #   unless self.owner == nil
-    #     Locuser::Configuration.config.address_formatter.format( self.owner.address_hash )
+    #     Locuser.config.address_formatter.format( self.owner.address_hash )
     #   end
     # end
 
@@ -30,7 +30,7 @@ module Locuser
     # @return [String] address component, or nil if not present
     def address(h1=nil)
       if h1 == nil
-        Locuser::Configuration.config.address_formatter.format( self.address_hash ) unless self.owner.nil?
+        Locuser.config.address_formatter.format( self.address_hash ) unless self.owner.nil?
       else
         self.address_hash[h1]
       end
@@ -73,7 +73,7 @@ module Locuser
     # @param [String] s the address to set to
     # @return [String] address component, or nil if not present
     def address=(s)
-      p = Locuser::Configuration.config.parser
+      p = Locuser.config.parser
       unless p.nil?
         a = p.parse(s)
         self.street1 = "#{a.number} #{a.street} #{a.street_type}"

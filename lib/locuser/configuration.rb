@@ -12,30 +12,10 @@ module Locuser
         attr_accessor   :parser
         attr_accessor   :parser_class
 
-        # Class declarations
-        #
-        # configuration
-        #
-        # !! note that configuration is class-wide, rather than on an
-        #    instance-instance value; this could be changed, for example if
-        #    two simultaneous persistence models for the place were desired
-        #
-        class << self
-            attr_writer :configiration
-        end
-
-        def self.config
-            @configuration ||= Locuser::Configuration.new
-        end
-
-        def self.configure
-            yield(config)
-        end
-
-        def self.reset
-            @configuration = Locuser::Configuration.new
-        end
-
+        ##
+        # Access the parser object, if it is nil then try to create it. If @parser_class is not valid or empty
+        # then this will return nil. A good reference for a parser would be the gem StreetAddress.
+        # @return [ParserObject]
         def parser
           @parser ||= (@parser_class.nil? || @parser_class.empty?) ? nil : Object.const_get(@parser_class).new
         end
