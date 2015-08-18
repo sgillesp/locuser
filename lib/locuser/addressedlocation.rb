@@ -17,7 +17,6 @@ module Locuser
     # Class method to construct a hierarchy based upon the adressed location.
     # this will automatically try to find the appropriate city, state, county.
     # It does not go back to country, presently.
-    #
     def self.create_hierarchy
       country = self.country.present? ? Locuser::Country.find_or_create_by(name: self.country) : nil
       state = nil
@@ -36,7 +35,7 @@ module Locuser
     # Return the entity type; for taxonomy hierarchy
     # @return [String] this entity type
     def get_entity_type
-        'street_address'
+        'addressed_location'
     end
 
     ##

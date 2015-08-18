@@ -7,6 +7,7 @@ require "#{ENGINE_RAILS_ROOT}/spec/test_app/config/environment"
 require 'rspec/rails'
 require 'factory_girl'
 require 'locuser_helper'
+require 'street_address'
 
 Rails.backtrace_cleaner.remove_silencers!
 

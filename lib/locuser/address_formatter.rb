@@ -31,11 +31,11 @@ module Locuser
     def format(hsh)
       str = String.new
       unless hsh[:street1] == nil; str << hsh[:street1]; end
-      unless hsh[:street2] == nil; str << ((str == nil) ? '' : ' ') << hsh[:street2]; end
-      unless hsh[:city] == nil; str << ((str == nil) ? '' : ' ')  << hsh[:city]; end
-      unless hsh[:state] == nil; str << ((str == nil) ? '' : ', ')  << hsh[:state]; end
-      unless hsh[:zip] == nil; str << ((str == nil) ? '' : '  ')  << hsh[:zip]; end
-      unless (!@use_country || hsh[:country] == nil); str << ((str == nil) ? '' : ' ')  << hsh[:country]; end
+      unless hsh[:street2] == nil; str << ((str.empty?l) ? '' : ' ') << hsh[:street2]; end
+      unless hsh[:city] == nil; str << ((str.empty?) ? '' : ' ')  << hsh[:city]; end
+      unless hsh[:state] == nil; str << ((str.empty?) ? '' : ', ')  << hsh[:state]; end
+      unless hsh[:zip] == nil; str << ((str.empty?) ? '' : '  ')  << hsh[:zip]; end
+      unless (!@use_country || hsh[:country] == nil); str << ((str.empty?) ? '' : ' ')  << hsh[:country]; end
       return str
     end
 
