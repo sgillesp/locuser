@@ -1,7 +1,7 @@
 # locuser/streetaddress.rb
 
 require 'active_support/concern'
-require 'locuser/streetaddress'
+#require 'locuser/streetaddress'
 
 module Locuser
   ##
@@ -14,7 +14,7 @@ module Locuser
     extend ActiveSupport::Concern
 
     included do
-      include Locuser::StreetAddress
+#      include Locuser::StreetAddress
 
       # this is the actual address hash
       field :address_hash, type: Hash, default: {}

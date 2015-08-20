@@ -1,13 +1,13 @@
 
 module Locuser
 
-  class TestOwnerAddress < Locuser::Location
+  class TestOwnerAddress < Locuser::StreetAddress
     include Mongoid::Document
     include Locuser::SpecBase
     include Locuser::OwnerStreetAddress
   end   # class TestOwnerAddress
 
-  class TestHashedAddress < Locuser::Location
+  class TestHashedAddress < Locuser::StreetAddress
     include Mongoid::Document
     include Locuser::SpecBase
     include Locuser::HashedAddress

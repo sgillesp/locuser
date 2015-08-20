@@ -2,7 +2,7 @@
 
 require 'active_support/concern'
 require 'locuser/location'
-require 'locuser/streetaddress'
+#require 'locuser/streetaddress'
 
 module Locuser
   ##

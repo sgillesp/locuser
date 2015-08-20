@@ -12,7 +12,7 @@ module Locuser
     extend ActiveSupport::Concern
 
     included do
-      include Locuser::StreetAddress
+#      include Locuser::StreetAddress
 
     end
 
