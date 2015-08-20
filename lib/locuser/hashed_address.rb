@@ -5,11 +5,8 @@ require 'active_support/concern'
 
 module Locuser
   ##
-  # Class to handle street addresses - this is not necessarily stored as a
-  # part of a Mongoid document, but rather handles all of the ins/outs of
-  # managing an address and validates it against a directory service, if desired.
-  # Code for actually handling the street address manipulation, etc. is separate,
-  # therefore, from the localized (geolocated) address and taxonomic representation.
+  # Class to store a street address as a hash of key/value pairs. Get/set are
+  # via the [] operators. 
   module HashedAddress
     extend ActiveSupport::Concern
 

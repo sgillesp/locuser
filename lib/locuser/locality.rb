@@ -2,6 +2,11 @@ require 'taxonomite/node'
 require 'geocoder'
 
 module Locuser
+  ##
+  # A locality represents a node which has no exact physical address (though may
+  # cover an area or region). Examples would include states, counties, and cities.
+  # This class allows for positioning in a taxonomy hierarchy. Future versions
+  # will allow determination of locaitons within the region, etc... 
   class Locality < Taxonomite::Node
 
     field :includetypeinname, type: Boolean, default: false

@@ -30,6 +30,8 @@ module StreetAddress
           end
         end
 
+        ##
+        # compare one address to another
         def ==(other)
           to_s == other.to_s
         end

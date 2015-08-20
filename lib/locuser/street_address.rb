@@ -4,18 +4,16 @@ require 'locuser/location'
 
 module Locuser
   ##
-  # Class to handle street addresses - this is not necessarily stored as a
-  # part of a Mongoid document, but rather handles all of the ins/outs of
-  # managing an address and validates it against a directory service, if desired.
-  # Code for actually handling the street address manipulation, etc. is separate,
-  # therefore, from the localized (geolocated) address and taxonomic representation.
+  # Class to handle street addresses as a Locuser::Location object.
+  # Handles all of the ins/outs of managing an address and parses it using a
+  # separate class. The class to parse (as Klass::parse(String)) is set in the
+  # Locuser configuration class as parser_class, which should be a class that
+  # responds to parse returning an Object that can provide the address components
+  # as a hash of key/value pairs. The actual storage of the address hash must
+  # be done by subclasses. Code for actually handling the street address
+  # manipulation, localization (geolocation), and taxonomic representaitons are
+  # kept separate and bridge together through this class.
   class StreetAddress < Locuser::Location
-    # extend ActiveSupport::Concern
-    #
-    # included do
-    #   # only allow subclass access to the address_hash
-    #   # embedded_in :addressable, polymorphic: true
-    # end
 
     ##
     # Provides access to the street address as a string. This is necesary in order to
@@ -88,15 +86,6 @@ module Locuser
     def from_h(h)
       {}  # should return nil? ??
     end
-
-    ##
-    # try to determine the address from the owner and create our hash. for
-    # now this is a temporary fix, but should be passed to another class or
-    # module in the near future. This is bad as it duplicates the address info,
-    # wasting storage (minor) but also requiring mainteance to keep synchronized
-    # (major).
-    # def do_initialize
-    # end
 
   end   # class StreetAddress
 end # module Locuser

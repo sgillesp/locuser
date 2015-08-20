@@ -4,10 +4,11 @@ require 'active_support/concern'
 
 module Locuser
   ##
-  # Class to handle street addresses by passing all calls through to the owner
+  # Module to handle street addresses by passing all calls through to the owner
   # object. In the future it may be worthwhile to use caching to store an address
   # string in this object, then simply check if the owner has changed whenever
   # address is involved, forcing a geolocation update at that time as well.
+  # Intended to be included into a subclass of StreetAddress. 
   module OwnerStreetAddress
     extend ActiveSupport::Concern
 

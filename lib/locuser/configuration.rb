@@ -5,6 +5,11 @@
 require "locuser/address_formatter"
 
 module Locuser
+    ##
+    # Handles configuration for the Locuser library. Various configuration options
+    # are described below. In general, the configuration options should be set
+    # before any source files from the ruby library are loaded as several classes
+    # depend upon these options to determine which modules to include. 
     class Configuration
         attr_accessor   :use_geocoder
         attr_accessor   :google_api_key
