@@ -25,12 +25,14 @@ module Locuser
 
     ##
     # hash from address. Creates a hash from an address putting different components of the
-    # address to a key-value pair. Returns an empty hash if it cannot
+    # address to a key-value pair. Returns and empty hash if no parser is available.
     # @param [String] s the string to convert to a hash
     # @return [Hash] a hash of the asddress compoenents in the string, {} if cannot
     def s_to_h(s)
       # try to use the configured parser if available; does a lot of error checking here
-      unless (Locuser.config.parser_class.nil? || !Locuser.config.parser_class.respond_to?(:parse))
+      if (Locuser.config.parser_class.nil? || !Locuser.config.parser_class.respond_to?(:parse))
+        return Hash.new
+      else
         a = Locuser.config.parser_class.parse(s)
         return a.to_h unless a.nil?
       end
