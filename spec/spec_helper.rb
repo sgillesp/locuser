@@ -6,6 +6,7 @@ $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require "#{ENGINE_RAILS_ROOT}/spec/test_app/config/environment"
 require 'rspec/rails'
 require 'factory_girl'
+require 'byebug'
 require 'locuser_helper'
 require 'street_address'
 

@@ -1,5 +1,6 @@
 # locuser/addresssedlocation.rb
 
+require 'active_support/concern'
 require 'locuser/location'
 require 'locuser/streetaddress'
 
@@ -9,42 +10,45 @@ module Locuser
   # storage, as well as wrapping geolocation to the address
   # (from Locuser::Location superclass). Thus both the address and the geolocation
   # are stored. This is the most appropriate class to associate with an outside
-  # (non-taxonomized) entity (like a user, business, etc...)
-  class AddressedLocation < Locuser::Location
-    include Locuser::StreetAddress
+  # (non-taxonomized) entity (like a user, business, etc...).
+  module AddressedLocation
+    extend ActiveSupport::Concern
 
-    ##
-    # Class method to construct a hierarchy based upon the adressed location.
-    # this will automatically try to find the appropriate city, state, county.
-    # It does not go back to country, presently.
-    def self.create_hierarchy
-      country = self.country.present? ? Locuser::Country.find_or_create_by(name: self.country) : nil
-      state = nil
-      if (country && self.state.present?)
-        state = country.children.present ? country.children.at(country.children.index { |o| o.name == self.name }) : nil
-        if state == nil
-           country.children << state = Locuser::State.new(name: self.state)
-        end
-      end
-      state = self.state.present ? Locuser::State.find_or_create_by(name: self.state) : nil
-      # if state is nil, it has not been specified
-    end
+    included do
+      # the address object which stores the address information
+      embeds_one  :address_obj, as: :addressable
 
-    protected
-    ##
-    # Return the entity type; for taxonomy hierarchy
-    # @return [String] this entity type
-    def get_entity_type
-        'addressed_location'
+      class_eval "def base_class; ::#{self.name}; end"
     end
 
     ##
-    # Valid parent types to support taxonomy hierarchy.  Addressed location
-    # can live anywhere. Really should be within another addressed location, but
-    # this is not enforced.
-    # @return [String] valid parent
-    def valid_parent_types
-      '*'
+    # Access the address storage object for this instance. By definition
+    # the address_obj is expected to respond to get/set via [key] and [key]=
+    # as well as to_h, and from_h methods.
+    # @return [Object] address storage object
+    def address
+      self.address_obj
+    end
+
+    # ##
+    # # Assign the address to a string indicative of the entire address. Overwrites
+    # # any pre-existing address information. For now addresses must be US addresses.
+    # # Does range checking such that will not assign, but will not throw exception
+    # # if address object storage is non-existent.
+    # # @param [String] s the string containing the address
+    # # @return [AddressableLocation] returns self
+    # def address=(s)
+    #   self.address_obj.from_s(s) unless self.address_obj.nil?
+    # end
+
+    ##
+    # Access the address storage object for this instance. By definition
+    # the address_obj is expected to respond to get/set via [key] and [key]=
+    # as well as to_s, to_h, and from_h methods.
+    # @param [Object] address storage object
+    # @return [Object] returns the storage object just set
+    def address=(obj)
+      self.address_obj = obj
     end
 
   end   # class AddressedLocation

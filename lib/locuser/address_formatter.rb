@@ -24,19 +24,34 @@ module Locuser
     end
 
     ##
-    # perform address formatting using the given hash. Expects that the hash will
-    # contain Strings hashed by :street1, :street2, etc...
+    # hash from address. Creates a hash from an address putting different components of the
+    # address to a key-value pair. Returns an empty hash if it cannot
+    # @param [String] s the string to convert to a hash
+    # @return [Hash] a hash of the asddress compoenents in the string, {} if cannot
+    def s_to_h(s)
+      # try to use the configured parser if available; does a lot of error checking here
+      unless (Locuser.config.parser_class.nil? || !Locuser.config.parser_class.respond_to?(:parse))
+        a = Locuser.config.parser_class.parse(s)
+        return a.to_h unless a.nil?
+      end
+      return {}
+    end
+
+    ##
+    # perform address formatting using the given hash. First will try to use the parser class to do this; failing that use a standard
+    # method, hwich is to dump the hash, in sequence separated by spaces.
     # @param [Hash] hsh as the given hash
     # @return [String] address as one line
-    def format(hsh)
-      str = String.new
-      unless hsh[:street1] == nil; str << hsh[:street1]; end
-      unless hsh[:street2] == nil; str << ((str.empty?l) ? '' : ' ') << hsh[:street2]; end
-      unless hsh[:city] == nil; str << ((str.empty?) ? '' : ' ')  << hsh[:city]; end
-      unless hsh[:state] == nil; str << ((str.empty?) ? '' : ', ')  << hsh[:state]; end
-      unless hsh[:zip] == nil; str << ((str.empty?) ? '' : '  ')  << hsh[:zip]; end
-      unless (!@use_country || hsh[:country] == nil); str << ((str.empty?) ? '' : ' ')  << hsh[:country]; end
-      return str
+    def h_to_s(hsh)
+      if Locuser.config.parser_class.nil? || !Locuser.config.parser_class.respond_to?(:create)
+        str = String.new
+        hsh.each do |key,val|
+          str << (str.empty?) ? '' : ' ' << val unless key == :country && !@use_country
+        end
+        return str
+      else
+        Locuser.config.parser_class.create(hsh)
+      end
     end
 
     protected
@@ -44,8 +59,6 @@ module Locuser
       super()
       @use_country = use_country
     end
-
-
 
   end   # class AddressFormatter
 end # module Places

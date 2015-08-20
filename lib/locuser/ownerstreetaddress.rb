@@ -11,118 +11,50 @@ module Locuser
   module OwnerStreetAddress
     extend ActiveSupport::Concern
 
-    # ##
-    # # get the formatted street address.
-    # # @return [String] address as one line
-    # def full_address()
-    #   unless self.owner == nil
-    #     Locuser.config.address_formatter.format( self.owner.address_hash )
-    #   end
-    # end
+    included do
+      include Locuser::StreetAddress
+
+    end
 
     ##
-    # get a particular address component. Generally :street1, :street2,
-    # :city, :state, :zip, :country are supported. This method will return
-    # the address as one line if h1 is nil. This is needed to support geocoder
-    # geolocation encoding (geocoder will call address, expecting a street address).
-    # If the owner for this objec is nil, this method returns nil.
-    # @param [Hash] h the component to find
+    # Get a particular address component. Calls its 'owner' with the key for the value.
+    # The owner object must respond_to? :key, otherwise returns nil
+    # @param [Hash] key the component to find
     # @return [String] address component, or nil if not present
-    def address(h1=nil)
-      if h1 == nil
-        Locuser.config.address_formatter.format( self.address_hash ) unless self.owner.nil?
-      else
-        self.address_hash[h1]
-      end
+    def [](key)
+      self.owner.send(key) unless (self.owner.nil? || !self.owner.respond_to?(key)) # will allow for exceptions if key not defined
     end
 
     ##
     # set a particular address component. Generally :street1, :street2,
-    # :city, :state, :zip, :country are supported.
+    # :city, :state, :zip, :country are supported. If h is nil, nothing is
+    # set for this class -- need to specify the hash to call this method for
+    # this particular class.
+    # @param [Hash] key the component to set
     # @param [String] val the value to set to
-    # @param [Hash] h the component to set
     # @return [String] address component, or nil if not present
-    def set_address(val, h = nil)
-      unless self.owner.nil?
-        case h
-        when :street1
-          self.owner.street1 = val
-        when :street2
-          self.owner.street2 = val
-        when :city
-          self.owner.city = val
-        when :state
-          self.owner.state = val
-        when :county
-          self.owner.county = val
-        when :country
-          self.owner.country = val
-        when :zip
-          self.owner.zip = val
-        else
-          self.address = val
-        end
-      end
+    def []=(key, val)
+      mthd = key.to_s + '='
+      self.owner.send(mthd, val) unless (self.owner.nil? || !self.owner.respond_to?(mthd))
     end
 
     ##
-    # set the address to a string, which will try to parse the address
-    # using the default parser via Locuser::Configuration. If this is
-    # not available does nothing. !!! Could have this throw exception in
-    # the future.
-    # @param [String] s the address to set to
-    # @return [String] address component, or nil if not present
-    def address=(s)
-      p = Locuser.config.parser
-      unless p.nil?
-        a = p.parse(s)
-        self.street1 = "#{a.number} #{a.street} #{a.street_type}"
-        self.street2 = a.street2
-        self.city = a.city
-        self.state = a.state
-        self.zip = a.zip
-        self.country = a.country
-      end
+    # set the values for this object from a hash of key value pairs
+    # this will call set (key,value) for everything in the has via the
+    # owner object, which will handle errors on its own if a method is
+    # not defined.
+    # @param [Hash] h the has to convert to an address object
+    def from_h(h)
+      h.each { |key, value| self.set(key,value) } unless self.owner.nil?
     end
 
     ##
-    # accessors for address components
-    # @return [String] component from address, or nil if not present
-    def street1(); (self.owner != nil) ? self.owner.street1 : nil; end
-    def street2(); (self.owner != nil) ? self.owner.street2 : nil; end
-    def city();(self.owner != nil) ? self.owner.city : nil; end
-    def state(); (self.owner != nil) ? self.owner.state : nil; end
-    def zip(); (self.owner != nil) ? self.owner.zip : nil; end
-    def county(); (self.owner != nil) ? self.owner.county : nil; end
-    def country(); (self.owner != nil) ? self.owner.country : nil; end
-
-    ##
-    # setters for address components (hides the hash interface)
-    # @return [String] returns the hash that was setters
-    def street1=(val); if (self.owner != nil); self.owner.street1 = val; end; end
-    def street2=(val); if (self.owner != nil); self.owner.street2 = val; end; end
-    def city=(val); if (self.owner != nil); self.owner.city = val; end; end
-    def state=(val); if (self.owner != nil); self.owner.state = val; end; end
-    def zip=(val); if (self.owner != nil); self.owner.zip = val; end; end
-    def county=(val); if (self.owner != nil); self.owner.county = val; end; end
-    def country=(val); if (self.owner != nil); self.owner.country = val; end; end
-
-
-    protected
-
-    def address_hash
-      { :street1 => self.street1,
-        :street2 => self.street2,
-        :city => self.city,
-        :state => self.state,
-        :zip => self.zip }
-    end
-
-    ##
-    # perform any initialization needed.
-    def do_initialize
-      # deprecated for now does nothing
-      #self.name = (self.owner != nil) && (self.owner.respond_to?('name')) ? self.owner.name : "User: #{self.id}"
+    # return the value of all of these values as
+    def to_h
+      { :street => self.address(:street),
+        :city => self.address(:city),
+        :state => self.address(:state),
+        :postal_code => self.address(:postal_code) }
     end
 
   end   # class OwnerStreetAddress

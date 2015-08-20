@@ -1,25 +1,27 @@
 
-require 'locuser/locality'
-
 module Locuser
 
   class TestOwnerAddress < Locuser::Location
     include Mongoid::Document
     include Locuser::SpecBase
     include Locuser::OwnerStreetAddress
-
   end   # class TestOwnerAddress
 
-  class TestStreetAddress < Locuser::Location
+  class TestHashedAddress < Locuser::Location
     include Mongoid::Document
     include Locuser::SpecBase
-    include Locuser::StreetAddress
-
+    include Locuser::HashedAddress
   end   # class TestStreetAddress
 
   class TestAddressOwner
     include Mongoid::Document
-    include Locuser::StreetAddress
-  end
+    include Taxonomite::Entity
+
+    attr_accessor :street
+    attr_accessor :city
+    attr_accessor :state
+    attr_accessor :postal_code
+
+  end   # class TestAddressOwner
 
 end # module Places
