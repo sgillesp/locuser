@@ -26,7 +26,6 @@ module Locuser
           @use_geocoder = :true
           @google_api_key = 'AIzaSyDR-WjFAX-6lYkLBparpdxrXiFsHet-DQY'
           @address_formatter = Locuser::AddressFormatter.new
-          @parser_class = ""
         end
     end
 end
