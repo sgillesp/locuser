@@ -18,6 +18,14 @@ module Locuser
     # end
 
     ##
+    # Provides access to the street address as a string. This is necesary in order to
+    # perform geocoding using the geocoder gem (from Locuser::Location, if enabled).
+    # @return [String] the address as a single line string
+    def address
+      self.to_s
+    end
+
+    ##
     # set the address to a string, which will try to parse the address
     # using the default parser via Locuser::Configuration. If this is
     # not available does nothing. !!! Could have this throw exception in
