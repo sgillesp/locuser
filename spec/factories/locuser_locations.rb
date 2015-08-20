@@ -32,17 +32,17 @@ FactoryGirl.define do
 
   factory :uwmc, :parent => :hashed_address do
     name "University of Washington Medical Center"
-    after(:build) { |a| a.from_s("1959 NE Pacific Avenue, Seattle, WA 98195") }
+    after(:build) { |a| a.address = "1959 NE Pacific Avenue, Seattle, WA 98195" }
   end
 
   factory "Harborview Medical Center", parent: :hashed_address do
     name "Harborview Medical Center"
-    after(:build) { |a| a.from_s("325 9th Ave, Seattle, WA 98104") }
+    after(:build) { |a| a.address = "325 9th Ave, Seattle, WA 98104" }
   end
 
   factory "Swedish Medical Center", parent: :hashed_address do
     name "Swedish Medical Center"
-    after(:build) { |a| a.from_s("5300 Tallman Ave NW, Seattle, WA 98107") }
+    after(:build) { |a| a.address = "5300 Tallman Ave NW, Seattle, WA 98107" }
   end
 
 end

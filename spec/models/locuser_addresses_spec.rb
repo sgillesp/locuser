@@ -26,7 +26,7 @@ describe Locuser do
     end
 
     it 'appropriately parsed address' do
-      expect(addr.to_s).to eq("1959 NE Pacific Ave, Seattle, WA 98195")
+      expect(addr.address).to eq("1959 NE Pacific Ave, Seattle, WA 98195")
     end
 
   end

@@ -26,6 +26,14 @@ module Locuser
     end
 
     ##
+    # Allows setting of the address record from a string (calls from_s).
+    # @param [String] s the string containing the address info
+    # @return [StreetAddress] this object (self)
+    def address=(s)
+      self.from_s(s)
+    end
+
+    ##
     # set the address to a string, which will try to parse the address
     # using the default parser via Locuser::Configuration. If this is
     # not available does nothing. !!! Could have this throw exception in
