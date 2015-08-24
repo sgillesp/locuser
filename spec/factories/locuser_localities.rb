@@ -1,5 +1,6 @@
 
 require 'faker'
+require 'factory_girl'
 
 FactoryGirl.define do
   factory :taxonomy_generator, :class => 'Taxonomite::Taxonomy' do

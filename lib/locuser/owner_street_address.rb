@@ -8,13 +8,17 @@ module Locuser
   # object. In the future it may be worthwhile to use caching to store an address
   # string in this object, then simply check if the owner has changed whenever
   # address is involved, forcing a geolocation update at that time as well.
-  # Intended to be included into a subclass of StreetAddress. 
+  # Intended to be included into a subclass of StreetAddress.
   module OwnerStreetAddress
     extend ActiveSupport::Concern
 
     included do
 #      include Locuser::StreetAddress
 
+    end
+
+    def address_changed?
+      self.owner.changed?
     end
 
     ##

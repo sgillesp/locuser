@@ -1,5 +1,7 @@
 # locuser/address_formatter.rb
 
+require 'locuser/util'
+
 module Locuser
   ##
   # Class to handle formatting of addresses from a hash containing a specific pattern
@@ -48,11 +50,15 @@ module Locuser
       if Locuser.config.parser_class.nil? || !Locuser.config.parser_class.respond_to?(:create)
         str = String.new
         hsh.each do |key,val|
-          str << (str.empty?) ? '' : ' ' << val unless key == :country && !@use_country
+          unless (key == :country && !@use_country)
+            pre = (val.nil? || str.empty?) ? '' : ([:city,:state].include?(key) ? ', ' : ' ')
+            str << pre
+            str << val unless val.nil?
+          end
         end
         return str
       else
-        Locuser.config.parser_class.create(hsh)
+         Locuser.config.parser_class.create(hsh).to_s
       end
     end
 

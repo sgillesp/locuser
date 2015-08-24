@@ -14,7 +14,7 @@ module Locuser
   # manipulation, localization (geolocation), and taxonomic representaitons are
   # kept separate and bridge together through this class.
   class StreetAddress < Locuser::Location
-
+    
     ##
     # Provides access to the street address as a string. This is necesary in order to
     # perform geocoding using the geocoder gem (from Locuser::Location, if enabled).

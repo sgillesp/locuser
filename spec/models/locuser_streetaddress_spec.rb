@@ -1,35 +1,35 @@
 require 'spec_helper'
+require 'street_address'
 
 describe Locuser do
-
-  it 'can create an HashedAddress object' do
-    expect { Locuser::TestHashedAddress.new }.not_to raise_error
+  before(:context) do
+    Locuser.config.parser_class = ::StreetAddress::US
   end
 
-  it 'can create an OwnerStreetAddress object' do
-    expect { Locuser::TestOwnerAddress.new }.not_to raise_error
+  after(:context) do
+    Locuser.config.parser_class = nil
   end
 
-  context 'parsing addresses by default (no parsing)' do
-    let(:addr) { build(:uwmc_hashed) }
+  context 'parsing addresses with StreetAddress gem' do
+    let(:addr) { Locuser.config.parser_class = ::StreetAddress::US; build(:uwmc) }
 
-    it 'appropriately set street' do
-      expect(addr[:street]).to eq('1959 NE Pacific Ave')
+    it 'appropriately parsed street' do
+      expect(addr[:street]).to eq('Pacific')
     end
 
-    it 'appropriately set city' do
+    it 'appropriately parsed city' do
       expect(addr[:city]).to eq('Seattle')
     end
 
-    it 'appropriately set state' do
+    it 'appropriately parsed state' do
       expect(addr[:state]).to eq('WA')
     end
 
-    it 'appropriately set postal_code' do
+    it 'appropriately parsed postal_code' do
       expect(addr[:postal_code]).to eq('98195')
     end
 
-    it 'appropriately prints address with default config' do
+    it 'appropriately parsed and prints address using StreetAddress::US' do
       expect(addr.address).to eq("1959 NE Pacific Ave, Seattle, WA 98195")
     end
 

@@ -6,7 +6,7 @@ require 'active_support/concern'
 module Locuser
   ##
   # Class to store a street address as a hash of key/value pairs. Get/set are
-  # via the [] operators. 
+  # via the [] operators.
   module HashedAddress
     extend ActiveSupport::Concern
 
@@ -15,6 +15,12 @@ module Locuser
 
       # this is the actual address hash
       field :address_hash, type: Hash, default: {}
+    end
+
+    ##
+    # need to determine if the address_hash has changed.
+    def address_changed?
+      return self.address_hash_changed?
     end
 
     ##

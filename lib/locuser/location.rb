@@ -23,7 +23,7 @@ module Locuser
         # must come AFTER :coordinates field
         include Geocoder::Model::Mongoid
         geocoded_by :address
-        after_validation    :geocode
+        after_validation    :geocode, if: ->(obj){ obj.address.present? and obj.address_changed? }
 
         # allows indexing and searching by location.
         index({ location: "2dsphere" }, { min: -200, max: 200 })

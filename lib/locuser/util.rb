@@ -38,6 +38,5 @@ module StreetAddress
 
       end
 
-
   end
 end

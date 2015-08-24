@@ -12,6 +12,9 @@ require 'street_address'
 
 Rails.backtrace_cleaner.remove_silencers!
 
+# this loads support classes
+Dir[File.join(ENGINE_RAILS_ROOT, 'spec/support/**/*.rb')].each {|f| require f}
+
 # this loads the model for specs
 Dir[File.join(ENGINE_RAILS_ROOT, 'spec/models/locuser/*.rb')].each {|f| require f}
 
@@ -28,4 +31,8 @@ RSpec.configure do |config|
     config.infer_spec_type_from_file_location!
     config.include FactoryGirl::Syntax::Methods
     RSpec::Expectations.configuration.warn_about_potential_false_positives = false
+end
+
+Locuser::SpecSeedData.configure do |config|
+  config.addresses_file = 'spec/support/addresses.txt'
 end
