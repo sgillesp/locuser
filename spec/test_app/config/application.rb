@@ -18,7 +18,6 @@ ENGINE_RAILS_ROOT = File.join(File.dirname(__FILE__), '../../..') if (ENGINE_RAI
 # make sure this comes before requiring these files
 Locuser.configure do |c|
     c.use_geocoder = false
-#    c.parser_class = ::StreetAddress::US  # this uses the StreetAddress gem
 end
 
 # this loads support classes
@@ -29,10 +28,6 @@ Dir[File.join(ENGINE_RAILS_ROOT, 'spec/models/locuser/*.rb')].each {|f| require 
 
 # this will cause factories to load twice!!
 Dir[File.join(ENGINE_RAILS_ROOT, "spec/factories/**/*.rb")].each {|f| require f}
-
-Locuser::SpecSeedData.configure do |config|
-  config.addresses_file = "#{ENGINE_RAILS_ROOT}/spec/support/addresses.txt"
-end
 
 module TestApp
   class Application < Rails::Application

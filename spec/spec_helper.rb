@@ -32,7 +32,3 @@ RSpec.configure do |config|
     config.include FactoryGirl::Syntax::Methods
     RSpec::Expectations.configuration.warn_about_potential_false_positives = false
 end
-
-Locuser::SpecSeedData.configure do |config|
-  config.addresses_file = 'spec/support/addresses.txt'
-end
