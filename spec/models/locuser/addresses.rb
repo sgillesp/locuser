@@ -2,6 +2,7 @@
 require 'locuser/street_address'
 require 'locuser/owner_street_address'
 require 'locuser/hashed_address'
+require 'models/locuser/specbase'
 
 module Locuser
 
